@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">-->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/msg_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="596dp"
+            android:layout_marginTop="55dp"
+            android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="600dp">
+
+                <ImageButton
+                    android:id="@+id/contacts"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/contacts" />
+
+                <ImageButton
+                    android:id="@+id/take_photo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/camera" />
+
+                <ImageButton
+                    android:id="@+id/choose_from_album"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/photo" />
+
+                <ImageButton
+                    android:id="@+id/download"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="center"
+                    android:src="@drawable/download" />
+
+                <ImageButton
+                    android:id="@+id/up"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/up" />
+
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="650dp">
+
+                <EditText
+                    android:id="@+id/input_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="输入点什么吧~"
+                    android:maxLines="2" />
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送"
+                    />
+
+            </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="#A62B2D32">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ppchat"
+            />
+
+        <Button
+            android:id="@+id/chat"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="进入聊天" />
+
+        <Button
+            android:id="@+id/forget"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="修改密码" />
+
+        <Button
+            android:id="@+id/force_offline"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="退出登录" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

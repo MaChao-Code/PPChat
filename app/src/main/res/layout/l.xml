@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--    <android.support.v7.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="?attr/actionBarSize"-->
+    <!--        android:background="?attr/colorPrimary"-->
+    <!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+    <!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--        app:layout_scrollFlags="scroll|enterAlways|snap" />-->
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+        <Button
+            android:id="@+id/friend"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:text="获取通讯录联系人"
+            android:textAllCaps="false" />
+        <ListView
+            android:id="@+id/contacts_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示通讯录"
+            android:textAllCaps="false">
+        </ListView>
+        <Button
+            android:id="@+id/force_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="强制离线"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入聊天"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/create_database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create database"
+            />
+
+        <Button
+            android:id="@+id/start_download"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Start Download" />
+
+        <Button
+            android:id="@+id/pause_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pause Download" />
+
+        <Button
+            android:id="@+id/cancel_download"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:text="Cancel Download" />
+    </LinearLayout>
+    <!--<TextView-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:layout_gravity="start"-->
+    <!--    android:text="zcchat  is a app"-->
+    <!--    android:textSize="30sp"-->
+    <!--    android:background="#FFF"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="#A62B2D32">
+
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
